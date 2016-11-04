@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://mirrors.ustc.edu.cn/aosp/"
+           fetch="git://mirrors.ustc.edu.cn/aosp/"
            review="android-review.googlesource.com" />
 
   <remote  name="github"
