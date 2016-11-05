@@ -21,7 +21,7 @@
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
   <!-- Github branch should stay marshmallow-release regardless of aosp branch for this project -->
-  <project path="android" name="Schischu/android_chagall_klimt" remote="github" revision="marshmallow-release" groups="pdk" >
+  <project path="android" name="FlyGoat/android_chagall_klimt" remote="github" revision="marshmallow-release" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
