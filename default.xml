@@ -12,16 +12,16 @@
   <default revision="refs/tags/android-6.0.1_r63"
            remote="aosp"
            sync-c="true"
-           sync-j="4" />
+           sync-j="5" />
 
   <project path=".org/build" name="platform/build" groups="pdk" />
-  <project path="build" name="FlyGoat/aosp_android_build" remote="github" groups="pdk" >
+  <project path="build" name="Schischu/aosp_android_build" remote="github" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
   <project path=".org/android" name="platform/manifest" groups="pdk" />
   <!-- Github branch should stay marshmallow-release regardless of aosp branch for this project -->
-  <project path="android" name="FlyGoat/android_chagall_klimt" remote="github" revision="marshmallow-release" groups="pdk" >
+  <project path="android" name="Schischu/android_chagall_klimt" remote="github" revision="marshmallow-release" groups="pdk" >
     <copyfile src="build.sh" dest="build.sh" />
   </project>
 
@@ -368,7 +368,7 @@
   <project path="hardware/ril" name="Schischu/aosp_android_hardware_ril" remote="github" groups="pdk" />
 
   <!-- Github branch should stay marshmallow-release regardless of aosp branch for these projects -->
-  <project path="hardware/samsung" name="Schischu/android_hardware_samsung" remote="github" revision="marshmallow-release" groups="pdk" />
+  <project path="hardware/samsung" name="FlyGoat/android_hardware_samsung" remote="github" revision="cm-13.0" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos" name="Schischu/android_hardware_samsung_slsi_exynos" remote="github" revision="marshmallow-release" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5-insignal" name="Schischu/android_hardware_samsung_slsi_exynos5-insignal" remote="github" revision="marshmallow-release" groups="pdk" />
   <project path="hardware/samsung_slsi/exynos5420" name="Schischu/android_hardware_samsung_slsi_exynos5420" remote="github" revision="marshmallow-release" groups="pdk" />
